@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import logo from '../assets/logo.png'
+import logo from 'src/assets/logo.png'
 
 export default function IntroLogo({ onFinish }) {
   const [show, setShow] = useState(true)
