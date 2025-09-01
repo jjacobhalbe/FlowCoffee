@@ -3,5 +3,11 @@ import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
+  plugins: [
+    tailwindcss(),
+    react({
+      fastRefresh: true,
+      include: '**/*.jsx',
+    }),
+  ],
 })
