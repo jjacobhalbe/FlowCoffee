@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import logo from '../assets/logo.png' // <-- podmień na swoje logo
+import logo from '../assets/logo.png'
 
 export default function IntroLogo({ onFinish }) {
   const [show, setShow] = useState(true)
@@ -9,7 +9,7 @@ export default function IntroLogo({ onFinish }) {
     const timer = setTimeout(() => {
       setShow(false)
       if (onFinish) onFinish()
-    }, 1500) // 0.5s animacja w + 1s trzymanie = 1.5s
+    }, 1500)
     return () => clearTimeout(timer)
   }, [onFinish])
 
