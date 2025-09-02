@@ -7,11 +7,7 @@ function App() {
   return (
     <>
       {showIntro && <IntroLogo onFinish={() => setShowIntro(false)} />}
-      {!showIntro && (
-        <div className="min-h-screen">
-          <h1 className="text-4xl font-bold text-center mt-20">FlowCoffee</h1>
-        </div>
-      )}
+      {!showIntro && <div className="min-h-screen"></div>}
     </>
   )
 }
