@@ -13,7 +13,7 @@ export default function IntroLogo({ onFinish }) {
   }, [])
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" onExitComplete={onFinish}>
       {show && (
         <motion.div
           className="fixed top-0 left-0 w-full h-full bg-white flex items-center justify-center z-50"
@@ -23,9 +23,6 @@ export default function IntroLogo({ onFinish }) {
             opacity: 0,
             y: -50,
             transition: { duration: 0.5, ease: 'easeInOut' },
-          }}
-          onAnimationComplete={() => {
-            if (!show && onFinish) onFinish()
           }}
         >
           <img src={logo} alt="Logo" className="w-9/10 max-w-md" />
