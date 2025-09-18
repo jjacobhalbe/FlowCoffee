@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-end gap-4 md:gap-8 text-white font-semibold text-lg md:text-3xl">
+    <nav className="flex flex-col md:flex-column items-center md:items-start justify-center md:justify-end gap-4 md:gap-8 text-black font-semibold text-lg md:text-3xl">
       <a href="#events" className="hover:underline">
         Eventy
       </a>
